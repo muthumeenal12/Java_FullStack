@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Dr. Emily Carter",
+        "image": "images/emily.jfif",
+        "details": "Expert in AI and automation."
+    },
+    {
+        "name": "Alex Reynolds",
+        "image": "images/alex_reynolds.jfif",
+        "details": "Data scientist and ML specialist."
+    }
+]
