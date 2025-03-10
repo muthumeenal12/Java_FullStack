@@ -1,0 +1,77 @@
+/* Chocolate-themed Styling */
+body {
+    background-color: #3e2723; /* Dark chocolate background */
+    color: #ffebcd; /* Creamy text color */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    background-color: #5d4037; /* Milk chocolate shade */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+/* Form Labels */
+.form-label {
+    color: #ffcc80; /* Light caramel text */
+}
+
+/* Input Fields */
+.form-control {
+    background-color: #8d6e63; /* Cocoa background */
+    color: #fff5e1; /* White chocolate text */
+    border: 1px solid #6d4c41;
+    border-radius: 8px;
+}
+
+.bod{
+    background-color: #3e2723; /* Dark chocolate background */
+    color: #ffebcd; /* Creamy text color */
+    font-family: 'Poppins', sans-serif;
+   
+    
+}
+.form-control:focus {
+    background-color: #a1887f; /* Slightly lighter cocoa */
+    border-color: #ffeb3b; /* Golden caramel */
+}
+
+/* Submit Button */
+.btn-primary {
+    background-color: #d2691e; /* Dark caramel */
+    border-color: #a0522d;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #8b4513; /* Rich chocolate */
+}
+
+/* Delicious Heading */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffcc80; /* Caramel */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Style */
+.card {
+    background-color: #6d4c41; /* Chocolate */
+    color: #ffebcd;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Center Content */
+.text-center {
+    text-align: center;
+}

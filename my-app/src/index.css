@@ -1,0 +1,51 @@
+body {
+  background-color: #3e2723;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.chocolate-container {
+  background: #5d4037;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.error-text {
+  color: #ff4444;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.chocolate-title {
+  color: #ffcc80;
+}
+
+.chocolate-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.chocolate-form button {
+  background-color: #d2691e;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.chocolate-list {
+  background: #4e342e;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.chocolate-card {
+  background: #6d4c41;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}

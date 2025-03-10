@@ -1,0 +1,89 @@
+{
+  "chocolates": [
+    {
+      "id": "1",
+      "name": "Dairy Milk",
+      "brand": "Cadbury",
+      "price": 50,
+      "weight": "50g"
+    },
+    {
+      "id": "2",
+      "name": "KitKat",
+      "brand": "Nestlé",
+      "price": 40,
+      "weight": "45g"
+    },
+    {
+      "id": "3",
+      "name": "Ferrero Rocher",
+      "brand": "Ferrero",
+      "price": 300,
+      "weight": "200g"
+    },
+    {
+      "id": "4",
+      "name": "Bournville",
+      "brand": "Cadbury",
+      "price": 100,
+      "weight": "80g"
+    },
+    {
+      "id": "5",
+      "name": "5 Star",
+      "brand": "Cadbury",
+      "price": 20,
+      "weight": "25g"
+    },
+    {
+      "id": "6",
+      "name": "Toblerone",
+      "brand": "Mondelez",
+      "price": 150,
+      "weight": "100g"
+    },
+    {
+      "id": "7",
+      "name": "Snickers",
+      "brand": "Mars",
+      "price": 50,
+      "weight": "50g"
+    },
+    {
+      "id": "8",
+      "name": "Lindt Excellence",
+      "brand": "Lindt",
+      "price": 250,
+      "weight": "100g"
+    },
+    {
+      "id": "9",
+      "name": "Galaxy",
+      "brand": "Mars",
+      "price": 120,
+      "weight": "90g"
+    }
+  ],
+  "brands": [
+    {
+      "id": "1",
+      "name": "Cadbury"
+    },
+    {
+      "id": "2",
+      "name": "Lindt"
+    },
+    {
+      "id": "3",
+      "name": "Ferrero Rocher"
+    },
+    {
+      "id": "4",
+      "name": "Hershey's"
+    },
+    {
+      "id": "5",
+      "name": "Nestle"
+    }
+  ]
+}

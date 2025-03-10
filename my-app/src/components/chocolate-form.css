@@ -1,0 +1,82 @@
+/* Chocolate-Themed Form Styling */
+.chocolate-form-container {
+    background-color: #4e342e; /* Dark chocolate */
+    color: #ffebcd; /* Creamy white chocolate text */
+    font-family: 'Poppins', sans-serif;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Form Heading */
+.chocolate-form-container h2 {
+    color: #ffcc80; /* Caramel */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Form Groups */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+.form-group label {
+    font-weight: bold;
+    color: #ffcc80; /* Caramel */
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #8d6e63; /* Cocoa */
+    border-radius: 8px;
+    background: #6d4c41; /* Chocolate brown */
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Input Focus */
+.form-group input:focus, 
+.form-group select:focus {
+    border-color: #d2691e; /* Dark caramel */
+    background: #5d4037; /* Darker chocolate */
+}
+
+/* Error Messages */
+.error-text {
+    color: #ff4444;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Submit Button */
+.chocolate-btn {
+    background-color: #d2691e; /* Dark caramel */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px;
+    width: 100%;
+}
+
+.chocolate-btn:hover {
+    background-color: #8b4513; /* Rich chocolate */
+    transform: scale(1.05);
+}
