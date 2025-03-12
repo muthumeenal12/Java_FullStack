@@ -1,0 +1,85 @@
+<h1 >Expense Tracker</h1>
+    <p class="page-description">
+      Manage your finances by tracking income and expenses. Keep an eye on your spending and make informed financial decisions.
+    </p>
+  
+    <!-- Section: About the Tracker -->
+    <h2 class="section-heading">Why Use This Tracker?</h2>
+    <p class="section-text">
+      This tool helps you record and categorize transactions effortlessly. You can analyze your spending patterns and improve your budgeting skills.
+    </p>
+
+      <!-- Section: How It Works -->
+      <h2 class="section-heading">How It Works</h2>
+      <p class="section-text">
+        Simply enter your transaction details, select a category, and specify whether it’s an income or expense. The tracker will calculate your balance automatically.
+      </p>
+<div class="container">
+    <!-- Page Heading -->
+    
+  
+  
+  
+    <!-- Section: Add a New Transaction -->
+    <h2 class="form-heading">Add a New Transaction</h2>
+    <p class="form-description">
+      Fill in the required details below and click "Add Transaction" to save your entry.
+    </p>
+  
+    <form #transactionForm="ngForm" (submit)="addTransaction()" class="transaction-form">
+      <!-- Date Input -->
+      <div class="form-group">
+        <label for="date">Transaction Date:</label>
+        <input type="date" id="date" [(ngModel)]="newTransaction.date" name="date" required #dateInput="ngModel" class="form-control" />
+        <div *ngIf="dateInput.touched && !newTransaction.date" class="error">
+          ⚠️ Please select a date!
+        </div>
+      </div>
+  
+      <!-- Amount Input -->
+      <div class="form-group">
+        <label for="amount">Amount (₹):</label>
+        <input type="number" id="amount" [(ngModel)]="newTransaction.amount" name="amount" required #amountInput="ngModel" class="form-control" />
+        <div *ngIf="amountInput.touched && newTransaction.amount <= 0" class="error">
+          ⚠️ Amount must be a positive number!
+        </div>
+      </div>
+  
+      <!-- Description Dropdown -->
+      <div class="form-group">
+        <label for="description">Category:</label>
+        <select id="description" [(ngModel)]="newTransaction.description" (change)="handleDescriptionChange($event)" name="description" required #descInput="ngModel" class="form-control">
+          <option value="" disabled>Select a category</option>
+          <option *ngFor="let desc of descriptions" [value]="desc">{{ desc }}</option>
+          <option value="Other">Other</option>
+        </select>
+        <div *ngIf="descInput.touched && !newTransaction.description" class="error">
+          ⚠️ Please select a category!
+        </div>
+      </div>
+  
+      <!-- Custom Description Input -->
+      <div class="form-group" *ngIf="showCustomDescriptionInput">
+        <label for="customDescription">Custom Category Name:</label>
+        <input type="text" id="customDescription" [(ngModel)]="newTransaction.description" name="customDescription" required #customDescInput="ngModel" class="form-control" />
+        <div *ngIf="customDescInput.touched && !newTransaction.description" class="error">
+          ⚠️ Please enter a category name!
+        </div>
+      </div>
+  
+      <!-- Transaction Type -->
+      <div class="form-group">
+        <label for="type">Transaction Type:</label>
+        <select id="type" [(ngModel)]="newTransaction.type" name="type" required class="form-control">
+          <option value="expense">🔴 Expense</option>
+          <option value="income">🔵 Income</option>
+        </select>
+      </div>
+  
+      <!-- Submit Button -->
+      <button mat-raised-button color="primary" type="submit" class="submit-btn" [disabled]="newTransaction.amount <= 0 || !newTransaction.description">
+        ➕ Add Transaction
+      </button>
+    </form>
+  </div>
+  

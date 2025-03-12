@@ -1,0 +1,60 @@
+/* Table Styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Color-Coded Rows */
+  .income-row {
+    background-color: #e0f7e0; /* Light Green */
+  }
+  
+  .expense-row {
+    background-color: #f8d7da; /* Light Red */
+  }
+  
+  /* Summary Section */
+  .summary {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .income-text {
+    color: green;
+  }
+  
+  .expense-text {
+    color: red;
+  }
+  
+  .balance-text {
+    color: blue;
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .delete-btn:hover {
+    background-color: darkred;
+  }
+  

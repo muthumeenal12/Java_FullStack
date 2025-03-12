@@ -1,0 +1,134 @@
+{
+  "transactions": [
+    {
+      "id": "1741413427262",
+      "date": "2025-03-01",
+      "description": "Salary",
+      "amount": 60000,
+      "type": "income"
+    },
+    {
+      "id": "1741413427263",
+      "date": "2025-03-02",
+      "description": "Freelance Work",
+      "amount": 15000,
+      "type": "income"
+    },
+    {
+      "id": "1741413427264",
+      "date": "2025-03-03",
+      "description": "Rent",
+      "amount": 20000,
+      "type": "expense"
+    },
+    {
+      "id": "1741413427265",
+      "date": "2025-03-04",
+      "description": "Groceries",
+      "amount": 5000,
+      "type": "expense"
+    },
+    {
+      "id": "1741413427266",
+      "date": "2025-03-05",
+      "description": "Dining Out",
+      "amount": 2500,
+      "type": "expense"
+    },
+    {
+      "id": "1741413427267",
+      "date": "2025-03-06",
+      "description": "Transport",
+      "amount": 1000,
+      "type": "expense"
+    },
+    {
+      "id": "1741413427268",
+      "date": "2025-03-07",
+      "description": "Entertainment",
+      "amount": 4000,
+      "type": "expense"
+    },
+    {
+      "id": "1741413427269",
+      "date": "2025-03-08",
+      "description": "Medical Bills",
+      "amount": 8000,
+      "type": "expense"
+    },
+    {
+      "id": "1741413427270",
+      "date": "2025-03-09",
+      "description": "Online Course",
+      "amount": 7000,
+      "type": "expense"
+    },
+    {
+      "id": "1741585026468",
+      "date": "2025-03-10T05:36:38.286Z",
+      "description": "chocolate",
+      "amount": 100,
+      "type": "expense",
+      "category": ""
+    },
+    {
+      "id": "1741586021452",
+      "date": "2025-03-10T05:53:32.446Z",
+      "description": "Chocolate",
+      "amount": 10,
+      "type": "expense",
+      "category": ""
+    },
+    {
+      "id": "1741587515984",
+      "date": "2025-03-10T06:18:23.515Z",
+      "description": "Groceries",
+      "amount": 1000,
+      "type": "expense",
+      "category": ""
+    }
+  ],
+  "total-expenses": 1500,
+  "descriptions": [
+    {
+      "id": "1",
+      "description": "Salary"
+    },
+    {
+      "id": "2",
+      "description": "Rent"
+    },
+    {
+      "id": "3",
+      "description": "Groceries"
+    },
+    {
+      "id": "4",
+      "description": "Utilities"
+    },
+    {
+      "id": "5",
+      "description": "Entertainment"
+    },
+    {
+      "id": "6",
+      "description": "Other"
+    },
+    {
+      "id": "7",
+      "description": "Chocolate"
+    },
+    {
+      "id": "6432",
+      "description": "Dress"
+    },
+    {
+      "id": "1c17",
+      "description": "Hair Clip"
+    },
+    {
+      "id": "be12",
+      "description": "chocolate"
+    }
+  ]
+}

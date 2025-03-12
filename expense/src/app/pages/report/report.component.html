@@ -1,0 +1,72 @@
+<div class="report-container">
+    <h2>Transaction Report</h2>
+  
+    <!-- Date Filters -->
+    <div class="filters">
+      <mat-form-field appearance="outline">
+        <mat-label>Start Date</mat-label>
+        <input matInput [matDatepicker]="startPicker" [(ngModel)]="startDate">
+        <mat-datepicker-toggle matIconSuffix [for]="startPicker"></mat-datepicker-toggle>
+        <mat-datepicker #startPicker></mat-datepicker>
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>End Date</mat-label>
+        <input matInput [matDatepicker]="endPicker" [(ngModel)]="endDate">
+        <mat-datepicker-toggle matIconSuffix [for]="endPicker"></mat-datepicker-toggle>
+        <mat-datepicker #endPicker></mat-datepicker>
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" (click)="filterTransactions()">Apply</button>
+    </div>
+  
+    <!-- Summary Cards -->
+    <div class="summary-cards">
+      <mat-card class="summary income">
+        <mat-card-title>Total Income</mat-card-title>
+        <mat-card-content>{{ totalIncome | currency:'INR' }}</mat-card-content>
+      </mat-card>
+  
+      <mat-card class="summary expense">
+        <mat-card-title>Total Expense</mat-card-title>
+        <mat-card-content>{{ totalExpense | currency:'INR' }}</mat-card-content>
+      </mat-card>
+  
+      <mat-card class="summary balance">
+        <mat-card-title>Remaining Balance</mat-card-title>
+        <mat-card-content>{{ balance | currency:'INR' }}</mat-card-content>
+      </mat-card>
+    </div>
+  
+    <!-- Transaction Report Table -->
+    <mat-table [dataSource]="filteredTransactions" class="mat-elevation-z8">
+  
+      <ng-container matColumnDef="date">
+        <mat-header-cell *matHeaderCellDef> Date </mat-header-cell>
+        <mat-cell *matCellDef="let transaction"> {{ transaction.date | date:'M/d/yy' }} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="description">
+        <mat-header-cell *matHeaderCellDef> Description </mat-header-cell>
+        <mat-cell *matCellDef="let transaction"> {{ transaction.description }} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="amount">
+        <mat-header-cell *matHeaderCellDef> Amount </mat-header-cell>
+        <mat-cell *matCellDef="let transaction"> {{ transaction.amount | currency:'INR' }} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="type">
+        <mat-header-cell *matHeaderCellDef> Type </mat-header-cell>
+        <mat-cell *matCellDef="let transaction"> 
+          <mat-chip [color]="transaction.type === 'income' ? 'primary' : 'warn'">
+            {{ transaction.type | titlecase }}
+          </mat-chip>
+        </mat-cell>
+      </ng-container>
+  
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  </div>
+  

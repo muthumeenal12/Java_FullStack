@@ -1,0 +1,41 @@
+/* Center the entire container */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centers horizontally */
+    justify-content: center;  /* Centers vertically */
+    height: 100vh;  /* Full screen height */
+    text-align: center;
+    background-color: bisque;
+}
+
+/* Style for the heading */
+.home-container h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Quick links container */
+.quick-links {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px;  /* Add space between buttons */
+}
+
+/* Style for buttons */
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: background 0.3s;
+    width: 200px; /* Set a fixed width */
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}

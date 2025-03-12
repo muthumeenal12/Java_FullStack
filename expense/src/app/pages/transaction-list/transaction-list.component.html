@@ -1,0 +1,26 @@
+<input type="text" placeholder="Search transactions..." [(ngModel)]="searchTerm" />
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Description</th>
+      <th>Amount</th>
+      <th>Type</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transaction of transactions | transactionFilter: searchTerm">
+      <td>{{ transaction.date | date:'M/d/yy' }}</td>
+      <td>{{ transaction.description }}</td>
+      <td>{{ transaction.amount | currency:'INR' }}</td>
+      <td>{{ transaction.type }}</td>
+      <td>
+        <button mat-fab color="primary" aria-label="Delete Transaction" (click)="deleteTransaction(transaction.id)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
