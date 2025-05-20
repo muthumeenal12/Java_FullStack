@@ -20,7 +20,6 @@ class DBHelper {
     return _database!;
   }
 
-  // ✅ **This is the function you need**
   static Future<int> insertEntry(Map<String, dynamic> entry) async {
     final db = await getDatabase();
     return await db.insert('entries', entry, conflictAlgorithm: ConflictAlgorithm.replace);
